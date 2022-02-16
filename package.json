@@ -1,0 +1,22 @@
+{
+  "name": "genshinwiki",
+  "version": "1.0.0",
+  "description": "Genshin Wiki WebApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbajaman/GenshinWiki.git"
+  },
+  "author": "Gloria, William, Raziq, Mohammed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbajaman/GenshinWiki/issues"
+  },
+  "homepage": "https://github.com/mbajaman/GenshinWiki#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
