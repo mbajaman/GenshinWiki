@@ -1,0 +1,2 @@
+# GenshinWiki
+Genshin Wiki website 
