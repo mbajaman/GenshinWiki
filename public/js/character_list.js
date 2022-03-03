@@ -1,4 +1,11 @@
 
+var characters = document.getElementsByClassName("character_container");
+for (const char of characters) {
+  char.onclick = () => {
+    window.location.href = ((window.location.href).slice(0,-19) + 'character_pages/' + char.id + '.html');
+  }
+}
+
 var searchButton = document.getElementById("search_submit");
 var searchText = document.getElementById("searchbar")
 searchButton.onclick = () => {
@@ -9,7 +16,6 @@ searchButton.onclick = () => {
     } else {
       document.getElementById(char.id).style.display = "none";
     }
-    
   }
-
 }
+
