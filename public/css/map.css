@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	overflow-y: hidden;
 }
 .container {
 	display: flex;
@@ -43,4 +44,19 @@ body {
 
 #map-monsdadt {
 	display: none
+}
+
+#overlay-monsdadt {
+	height: 99vh;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#overlay-liyue {
+	height: 99vh;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#overlay-inazuma {
+	height: 99vh;
+	background-color: rgba(0, 0, 0, 0);
 }
