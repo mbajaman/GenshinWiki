@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+}
+.container {
+	display: flex;
+	height: 99vh;
+}
+
+.map-menu {
+	flex: 1;
+	margin: 5px;
+}
+
+.overlay {
+	height: 99vh;
+	background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+#map-menu-monsdadt {
+	height: 99vh;
+	background: url("../assets/map/map-menu-monsdadt.jpg");
+	background-size: cover;
+	background-position: -15vw;
+	background-repeat: no-repeat;
+}
+
+#map-menu-liyue {
+	height: 99vh;
+	background: url("../assets/map/map-menu-liyue.jpg");
+	background-size: cover;
+	background-position: -15vw;
+	background-repeat: no-repeat;
+}
+
+#map-menu-inazuma{
+	height: 99vh;
+	background: url("../assets/map/map-menu-inazuma.jpg");
+	background-size: cover;
+	background-position: -15vw;
+	background-repeat: no-repeat;
+}
+
+#map-monsdadt {
+	display: none
+}
