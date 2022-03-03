@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: "Oxanium", sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #00173A;
+    display:flex;
+    justify-content: space-between;
+
+  }
+  
+  #navWord {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navLogo {
+    top: 2px;
+    position: relative;
+    margin-left:5%;
+  }
+
+  .topnav img {
+      width:40px;
+      
+  }
+
+  
+  
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+  
+  /* .topnav a.active {
+    color: white; */
+
+  }
