@@ -5,9 +5,9 @@
 #character_list {
   background-color:#B6EDFF;
   border: 1px black solid;
-  width:300px;
+  width:400px;
   padding: 10px;
-  height: 300px;
+  height: 500px;
   overflow-y: scroll;
 }
 
@@ -16,7 +16,7 @@
   padding-left: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 250px;
+  width: 350px;
   display: flex;
   background-color: rgba(32, 102, 163, 0.287);
   height: 150px;
@@ -24,6 +24,10 @@
 
 .character_container:hover {
   background-color: rgba(255, 243, 189, 0.486);
+}
+
+#info {
+  width: 100px;
 }
 
 #name {
@@ -42,4 +46,5 @@
 #icon {
   height: 150px;
   display: inline-block;
+  padding-left: 15px;
 }

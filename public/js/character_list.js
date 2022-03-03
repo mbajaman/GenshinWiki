@@ -11,6 +11,10 @@ var searchText = document.getElementById("searchbar")
 searchButton.onclick = () => {
   var characters = document.getElementsByClassName("character_container");
   for (const char of characters) {
+    var searched = searchText.value;
+    searched = searched.toLowerCase();
+    searched = searched.trim();
+
     if ((char.id).includes(searchText.value)) {
       document.getElementById(char.id).style.display = "flex";
     } else {
