@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teyvat Map</title>
+	<link rel="stylesheet" type="text/css" href="../../css/map.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+	<script> 
+	  $(function(){
+	    $("#includedContent").load("navbar.html"); 
+	  });
+  	</script> 
+</head>
+<body>
+	<div id="includedContent"></div>
+	<div class="container">
+
+		<div class="map-menu" id="map-menu-monsdadt">
+			<div id="overlay-monsdadt"></div>
+			<div id = "map">
+				<img id = "map-monsdadt" class ="map-monsdadt">
+			</div>
+		</div>
+		<div class = "map-menu" id="map-menu-liyue">
+			<div id="overlay-liyue"></div>
+			<div id = "map">
+				<img id = "map-monsdadt" class ="map-monsdadt">
+			</div>
+		</div>
+		<div class="map-menu" id="map-menu-inazuma">
+			<div id="overlay-inazuma"></div>
+			<div id = "map">
+				<img id = "map-monsdadt" class ="map-monsdadt">
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="../../js/map.js"></script>
+</html>
