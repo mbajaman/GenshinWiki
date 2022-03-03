@@ -1,11 +1,18 @@
-const express = require('express')
+const express = require('express');
 const app = express();
 const port = 3000;
+const path = require('path');
+
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(path.join(__dirname, '/public/html/index.html'))
+});
+
+app.get('/public/html/character_list.html', (req, res) => {
+  res.sendFile(path.join(__dirname, './character_list.html'))
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
+  console.log(`Genshin Wiki listening on port ${port}!`)
 });

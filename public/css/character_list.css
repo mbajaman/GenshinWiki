@@ -1,0 +1,41 @@
+#searchbar {
+  margin: 10px;
+}
+
+#character_list {
+  background-color:#B6EDFF;
+  border: 1px black solid;
+  width:300px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.character_container {
+  border: 1px black solid;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+  display: flex;
+  background-color: rgba(32, 102, 163, 0.287);
+  height: 150px;
+}
+
+#name {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#rarity {
+  font-weight: bold;
+}
+
+#vision {
+  font-weight: bold;
+}
+
+#icon {
+  height: 150px;
+  display: inline-block;
+}
