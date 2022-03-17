@@ -15,6 +15,10 @@ app.get('/public/html/character_list.html', (req, res) => {
   res.sendFile(path.join(__dirname, './character_list.html'))
 });
 
+app.get('/public/html/character_pages/albedo.html', (req, res) => {
+  res.sendFile(path.join(__dirname, './albedo.html'))
+});
+
 app.get('/public/html/navbar.html', (req, res) => {
   res.sendFile(path.join(__dirname, './navbar.html'))
 });
