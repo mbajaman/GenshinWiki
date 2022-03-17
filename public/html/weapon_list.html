@@ -1,47 +1,92 @@
-<!--
-    This page will contain a list of weapons the player will go through
--->
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script> 
+  $(function(){
+    $("#includedContent").load("navbar.html"); 
+  });
+  </script> 
 
- <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="../css/navbar.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-      <script> 
-          $(function(){
-            $("#includedContent").load("navbar.html"); 
-          });
-      </script> 
-      <title>Genshin Wiki</title>
-    </head>
-    <body>
-        <div id="includedContent"></div>
-        <div>
-            <h1>Weapons Subtype List</h1>
-            <p>A list of item subtypes matching the navigation bar in the Bag in Genshin Impact</p>
-            <hr>
-            <div id="subtype-list-div">
-                <ul id="subtype-list">
-                    <li>Bows</li>
-                    <li>Swords</li>
-                    <li>Claymores</li>
-                    <li>Catalyst</li>
-                    <li>Polearms</li>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/weapon_list.css">
+  <title>Genshin Wiki</title>
+</head>
+<body>
+  <div id="includedContent"></div>
+  <h1>Weapons</h1>
+  <input type="text" placeholder="search" name="search" id="searchbar">
+  <button id="search_submit">Go</button>
 
-
-                    <ul>
-                     <li>Weapon Substats go Here</li>
-                </ul>
-            </div>
+  <div id="character_list">
     
-        </div>
-        
-        
-      
-    </body>
-    
-    <!-- <script src="../js/navbar.js"></script> -->
-    </html>
+    <div id="albedo" class="character_container">
+
+      <div id="info">
+        <p id="name">Amos' Bow</p>
+        <p id="rarity">5 Star</p>
+        <p id="vision">Bow</p>
+      </div>
+      <img id="icon" src="../assets/weapon_icons/Amos_Bow.png">
+
+    </div>
+
+    <div id="aloy" class="character_container">
+      <div id="info">
+        <p id="name">Thundering Pulse</p>
+        <p id="rarity">5 Star</p>
+        <p id="vision">Bow</p>
+      </div>
+      <img id="icon" src="../assets/weapon_icons/Thundering_Pulse.png">
+    </div>
+
+    <div id="amber" class="character_container">
+      <div id="info">
+        <p id="name">Skyward Harp</p>
+        <p id="rarity">5 Star</p>
+        <p id="vision">Bow</p>
+      </div>
+      <img id="icon" src="../assets/weapon_icons/Skyward_Harp.png">
+    </div>
+
+    <div id="aratakiitto" class="character_container">
+      <div id="info">
+        <p id="name">Arataki Itto</p>
+        <p id="rarity">5 Star</p>
+        <p id="vision">Geo</p>
+      </div>
+      <img id="icon" src="../assets/character_icons/Character_Arataki_Itto_Thumb.png">
+    </div>
+
+    <div id="barbara" class="character_container">
+      <div id="info">
+        <p id="name">Barbara</p>
+        <p id="rarity">4 Star</p>
+        <p id="vision">Hydro</p>
+      </div>
+      <img id="icon" src="../assets/character_icons/Character_Barbara_Thumb.png">
+    </div>
+
+    <div id="beidou" class="character_container">
+      <div id="info">
+        <p id="name">Beidou</p>
+        <p id="rarity">4 Star</p>
+        <p id="vision">Electro</p>
+      </div>
+      <img id="icon" src="../assets/character_icons/Character_Beidou_Thumb.png">
+    </div>
+
+    <div id="bennett" class="character_container">
+      <div id="info">
+        <p id="name">Bennett</p>
+        <p id="rarity">4 Star</p>
+        <p id="vision">Pyro</p>
+      </div>
+      <img id="icon" src="../assets/character_icons/Character_Bennett_Thumb.png">
+    </div>
+
+  </div>
+</body>
+<script src="../js/character_list.js"></script>
+</html>
