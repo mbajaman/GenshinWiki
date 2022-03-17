@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/navbar.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="../css/item.css">
   <script> 
       $(function(){
         $("#includedContent").load("navbar.html"); 
@@ -20,13 +21,15 @@
 </head>
 <body>
     <div id="includedContent"></div>
-    <div>
+    <div class="container">
         <h1>Items Subtype List</h1>
         <p>A list of item subtypes matching the navigation bar in the Bag in Genshin Impact</p>
         <hr>
         <div id="subtype-list-div">
             <ul id="subtype-list">
-                <li>Artifacts</li>
+                <li>
+                    <a href="artifact_pages/artifact_list.html">Artifacts</a>
+                </li>
                 <li>Character Development Items</li>
                 <li>Food</li>
                 <ul>
