@@ -1,11 +1,55 @@
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script> 
+  $(function(){
+    $("#includedContent").load("../navbar2.html"); 
+  });
+  </script> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/character_page.css">
   <title>Amber</title>
+  
 </head>
 <body>
-  <p>Amber Info</p>
+  <div id="includedContent"></div>
+  <div id="main_container">
+
+    <h1>Aloy - Savior From Another World</h1>
+
+    <hr>
+
+    <div id="split_container">
+      <div id="left_container">
+        <img id="char_img" src="../../assets/character_images/Character_Amber_Card.jpg">
+      </div>
+      <div id="right_container">
+        <div id="info">Amber is a playable Pyro character in Genshin Impact.
+          As the only remaining Outrider of the Knights of Favonius, she is always ready to help the citizens of Mondstadt — whether it be something simple or perhaps a more challenging task.
+          </div>
+        <diV id="info2">
+          <p id="rarity">Rarity: &nbsp&nbsp&nbsp&nbsp&nbsp 4 Stars</p>
+          <p id="weapon">Weapon: &nbsp Bow</p>
+          <p id="vision">Vision: &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPyro</p>
+        </diV>
+        
+      </div>  
+  </div>
+  <br>
+  <br>
+    <h2>Additional Info</h2>
+    <hr>
+    <div id="detailed_info">
+      <p>Birthday: August 10th</p>
+      <p>Constelation: Lepus</p>
+      <p>Region: Mondstadt</p>
+      <p>Affiliation: Knights of Favonius</p>
+      <p>Special Dish: Outrider's Champion Steak!</p>
+    </div>
+    <br>
+  </div>
+  
 </body>
 </html>
