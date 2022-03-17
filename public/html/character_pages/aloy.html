@@ -1,11 +1,53 @@
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script> 
+  $(function(){
+    $("#includedContent").load("../navbar2.html"); 
+  });
+  </script> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/character_page.css">
   <title>Aloy</title>
+  
 </head>
 <body>
-  <p>Aloy Info</p>
+  <div id="includedContent"></div>
+  <div id="main_container">
+
+    <h1>Aloy - Savior From Another World</h1>
+
+    <hr>
+
+    <div id="split_container">
+      <div id="left_container">
+        <img id="char_img" src="../../assets/character_images/Character_Aloy_Card.png">
+      </div>
+      <div id="right_container">
+        <div id="info">Aloy is a playable Cryo crossover character in Genshin Impact. She is the heroine from Horizon Zero Dawn and is introduced as a collaboration and crossover character between Guerrilla Games and miHoYo.</div>
+        <diV id="info2">
+          <p id="rarity">Rarity: &nbsp&nbsp&nbsp&nbsp&nbsp 5 Stars</p>
+          <p id="weapon">Weapon: &nbsp Bow</p>
+          <p id="vision">Vision: &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCryo</p>
+        </diV>
+        
+      </div>  
+  </div>
+  <br>
+  <br>
+    <h2>Additional Info</h2>
+    <hr>
+    <div id="detailed_info">
+      <p>Birthday: April 4th</p>
+      <p>Constelation: Nora Fortis</p>
+      <p>Region: Unknown</p>
+      <p>Affiliation: Wandering Heroine</p>
+      <p>Special Dish: Satiety Gel</p>
+    </div>
+    <br>
+  </div>
+  
 </body>
 </html>
