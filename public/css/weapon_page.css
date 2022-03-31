@@ -1,0 +1,82 @@
+body {
+    background-image: url("../assets/backgrounds/char_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #main_container {
+    background-color:rgba(0, 23, 58, 0.67);
+    border: 1px black solid;
+    width:75vw;
+    padding: 10px;
+    height: 85vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: aliceblue;
+    overflow-x: hidden;
+  }
+  
+  #split_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #left_container {
+    width: 40%;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  #right_container {
+    width: 60%;
+  }
+  
+  #info {
+    width: 80%;
+    font-size: 20pt;
+    line-height: 30pt;
+  }
+  
+  #info2 {
+    margin-top: 50px;
+    width: 80%;
+    font-size: 20pt;
+    line-height: 25pt;
+  }
+  
+  hr {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+  
+  h1 {
+    font-weight: bolder;
+    width:100%;
+    text-align: center;
+    display: flex;
+    font-size: 40pt;
+    margin-left: 5%;
+  }
+  
+  h2 {
+    font-weight: bolder;
+    width:100%;
+    text-align: center;
+    display: flex;
+    font-size: 30pt;
+    margin-left: 5%;
+  }
+  
+  #char_img {
+    border-radius: 41px;;
+    height: 30vw;
+  }
+  
+  #detailed_info {
+    font-size: large;
+    margin-left: 5%;
+  }
