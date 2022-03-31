@@ -2,7 +2,7 @@
 var weapons = document.getElementsByClassName("character_container");
 for (const wep of weapons) {
   wep.onclick = () => {
-    window.location.href = ((window.location.href).slice(0,-19) + 'weapon_pages/' + wep.id + '.html');
+    window.location.href = ((window.location.href).slice(0,-16) + 'weapon_pages/' + wep.id + '.html');
   }
 }
 
