@@ -50,7 +50,7 @@ mapMenuInazuma.addEventListener("click", function(){
 
 function mapPopup(imageName, imageWidth, imageHeight){
 
-  imageLocation = '/assets/map/' + imageName;
+  imageLocation = '/assets/map/' + imageName; // Region map image
 
   Swal.fire({
     color: '#716add',
@@ -66,5 +66,49 @@ function mapPopup(imageName, imageWidth, imageHeight){
       popup: 'animate__animated animate__fadeOut'
     },
     confirmButtonText: 'Close',
+  });
+
+  // Grab swal window
+  var swalWindow = document.getElementsByClassName("swal2-popup")[0];
+
+  // Create p node and add text
+  var toggleBoss = document.createElement("p");
+  var textNode = document.createTextNode("Bosses");
+  toggleBoss.appendChild(textNode);
+  swalWindow.appendChild(toggleBoss); //add to swal window
+
+  // Load overlay image
+  loadBosses(imageName, toggleBoss, swalWindow);
+  
+}
+
+// Load approprite boss map based on region
+function loadBosses(mapName, toggleBoss, swalWindow){
+
+  // Check to see if boss map is enabled
+  var bossMapElementExists = document.getElementsByClassName("boss-map");
+
+  // Add onclick for toggle button
+  toggleBoss.addEventListener("click", function(){
+  bossMapLocation = '/assets/map/' + mapName.slice(0, -4) + '-bosses.png'; //slice string to get proper name
+
+  if(bossMapElementExists.length > 0){
+    bossMapElementExists[0].remove(); // See if boss mapp loaded
+  } else {
+    // Create Image element
+    var bossMap = document.createElement('img');
+    bossMap.classList.add("swal2-image");
+    bossMap.classList.add("boss-map");
+    bossMap.src = bossMapLocation;
+
+    if(mapName == "Inazuma.png"){
+      bossMap.style = "position: absolute; top: 8px; bottom: 16px; left: 3px; width: 1284px; height: 700px;";
+    } else {
+      bossMap.style = "position: absolute; top: 8px; bottom: 16px; left: 3px; width: 1100px; height: 700px;";
+    }
+    
+    swalWindow.appendChild(bossMap);
+  }
+
   });
 }

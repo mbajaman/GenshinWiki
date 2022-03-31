@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-image: url(../assets/backgrounds/char_bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 33.4%;
+  text-align: center;
+  height:100vh;
+  font-size: x-large;
+  transform: skew(-15deg);
+  margin-left: 0.5%;
+}
+
+h1 {
+  transform: skew(15deg);
+}
+
+.container:hover {
+  color: aliceblue;
+}
+
+#box_container {
+  display: flex;
+}
+
+#characters {
+  background-color: rgba(238, 216, 91, 0.8);
+  overflow: hidden;
+}
+
+#character_img {
+  background-image: url(../assets/homepage/keqing_homepage.png);
+  width: 150%;
+  height: 100%;
+  transform: skew(15deg);
+  background-repeat: no-repeat;
+}
+
+#weapons {
+  background-color: rgba(180, 113, 255, 0.8);
+  overflow: hidden;
+}
+
+#weapons_img {
+  background-image: url(../assets/homepage/Weapon_White_Tassel.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  transform: skew(15deg);
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  margin-left: 3%;
+  display: inline-block;
+}
+
+#items {
+  background-color: rgba(0, 140, 255, 0.8);
+}
+
+#items_img {
+  background-image: url(../assets/homepage/Item_Bloom_Times.png);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  transform: skew(15deg);
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  margin-left: 6%;
+  display: inline-block;
+}
