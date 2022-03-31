@@ -5,7 +5,11 @@ body {
     background-attachment: fixed;
 }
 
-.card {
+.content {
+    background-color:rgba(0, 23, 58, 0.7);
+}
+
+.card-arti {
     background-color:rgba(0, 23, 58, 0.67);
     color: aliceblue;
     margin: 1em;
@@ -13,6 +17,39 @@ body {
     width: 15%;
 }
 
+.card-food {
+    background-color:rgba(0, 23, 58, 0.67);
+    color: aliceblue;
+    margin: 1em;
+    display: inline-flex;
+    width: 20em;
+}
+
+.card-des {
+    background-color:rgba(0, 23, 58, 0.67);
+    color: aliceblue;
+    margin: 1em;
+    display: inline-flex;
+    width: 80%;
+}
+
 .card-img-top {
     background-color:rgba(0, 23, 58, 0.6);
+}
+
+.rarity {
+    display: inline-flex;
+}
+
+.rarity-img {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.effect {
+    display: inline-flex;
+}
+
+.effect-img {
+    margin-left: 1em;
 }
